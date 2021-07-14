@@ -46,14 +46,11 @@ Use the copy function below to do the following:
 */
 
 function copy(array){
-
+ const copy = array.slice();
+ return array;
 }    
 
-
-
-
-
-
+console.log('task 1', copy(originalFlavors));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Confirm that an array is exactly 31 flavors. Your function should accept:
@@ -89,12 +86,12 @@ Use the addFlavor function below to do the following:
 
 
 function addFlavor(array, string){
- originalFlavors.unshift('Rainbow Sherbert');
- return originalFlavors;
+ array.unshift();
+ return array;
 }
 
-console.log('task 3', originalFlavors);
 
+console.log('task 3', addFlavor(originalFlavors, 'Rainbow Sherbert'));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Houston, we have a problem! There are now 32 flavors in the originalFlavors array! Your task is to remove an item from the end of the array. 
@@ -108,11 +105,11 @@ Use the removeLastFlavor function below to do the following:
 */
 
 function removeLastFlavor(array){
- originalFlavors.pop();
- return originalFlavors;
+ // remove last item from array using .pop()
+ //return the array
 }
 
-console.log('task 4', originalFlavors);
+
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Write a function that returns a flavor at a given index in the array.
@@ -125,8 +122,10 @@ Use the getFlavorByIndex function below to do the following:
   For example: running getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully
 */
 
+//2 param - array and second is number (index)
 function getFlavorByIndex(array, i){
-
+// returning the index at the given number
+// array[index]
 }
 
 
