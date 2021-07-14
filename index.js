@@ -127,11 +127,11 @@ Use the getFlavorByIndex function below to do the following:
 //2 param - array and second is number (index)
 function getFlavorByIndex(array, i){
 // returning the index at the given number
+return array[i];
 // array[index]
 }
 
-
-
+console.log('task 5', getFlavorByIndex(originalFlavors, 2));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 As corporate wants to add more and more flavors to their lineup, they've realized that they need to remove flavors based on flavor name, 
