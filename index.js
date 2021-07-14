@@ -85,13 +85,13 @@ Use the addFlavor function below to do the following:
 */
 
 
-function addFlavor(array, string){
+function addFlavor(array, flavor){
  array.unshift();
- return array;
+ return originalFlavors;
 }
 
+console.log('task 2', addFlavor(originalFlavors, "Rainbow Sherbert"));
 
-console.log('task 3', addFlavor(originalFlavors, 'Rainbow Sherbert'));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Houston, we have a problem! There are now 32 flavors in the originalFlavors array! Your task is to remove an item from the end of the array. 
@@ -106,10 +106,12 @@ Use the removeLastFlavor function below to do the following:
 
 function removeLastFlavor(array){
  // remove last item from array using .pop()
+ array.pop();
  //return the array
+ return array;
 }
 
-
+console.log('task 4', removeLastFlavor(originalFlavors));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Write a function that returns a flavor at a given index in the array.
